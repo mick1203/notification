@@ -13,7 +13,7 @@
         /* blank page */
         html, body {
             margin: 0;
-            padding: 0;
+            padding: 0 50px;
             box-sizing: border-box;
         }
 
@@ -23,19 +23,15 @@
         }
 
         mibu-notification {            
-            position: absolute;
-
-            height: 100px;
-            width: 300px;
-            
-            left: calc(50vw - 150px);
-            top: calc(50vh - 50px);
+            margin: 20px;
+            width: 50vw;
         }
 
     </style>
 </head>
 <body>
-    <mibu-notification>
-
-    </mibu-notification>
+    <mibu-notification type="success" title="Got it!" message="Successfully saved your collections of cat images. Awesome!"></mibu-notification>
+    <mibu-notification type="warning" title="Look out!" message="There is evil out there. Better take a sword."></mibu-notification>
+    <mibu-notification type="failure" title="Oops!" message="Someone dropped the production database. Thought I'd let you know. Sorry."></mibu-notification>
+    <mibu-notification type="information" title="Did you know?" message="Dogs seem to be better sniffers than Wireshark. Wow. Who knew ..."></mibu-notification>
 </body>
