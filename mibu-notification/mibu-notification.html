@@ -1,0 +1,35 @@
+<template id="mibu-notification">
+    <!-- shadow DOM CSS -->
+    <style>
+
+    </style>
+
+    <!-- shadow DOM markup -->
+
+</template>
+
+<script>
+    const mibuNotificationTemplate = document.currentScript.ownerDocument.querySelector('template').content;
+
+    class mibuNotifcation extends HTMLElement {
+
+        constructor() {            
+            super();
+            this.attachShadow({ mode: 'open' });
+
+            const content = document.importNode(mibuNotificationTemplate, true);
+            this.shadowRoot.appendChild(content);
+        }
+
+        static get observedAttributes() { return []; };
+
+        connectedCallback() {}
+
+        attributesChangedCallback(name, oldVal, newVal) {}
+
+        disconnectedCallback() {}
+
+    }
+
+    window.customElements.define('mibu-notification', mibuNotifcation);
+</script>
