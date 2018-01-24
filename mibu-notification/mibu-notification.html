@@ -17,6 +17,11 @@
             font-family: 'Open Sans', sans-serif;
         }
 
+        .none {
+            border-color: black;
+            color: black;
+        }
+
         .information {
             border-color: cornflowerblue;
             color: cornflowerblue;
@@ -57,8 +62,8 @@
 
     <!-- shadow DOM markup -->
     <div class="notification-container">
-        <h2 class="headline"></h2>
-        <p class="message"></p>
+        <h2 class="headline">title</h2>
+        <p class="message">message</p>
     </div>
 
 </template>
@@ -93,6 +98,7 @@
             switch(name) {
                 case 'type':
                     switch(newVal) {
+                        case 'none':
                         case 'information':
                         case 'warning':
                         case 'failure':
