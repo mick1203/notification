@@ -1,12 +1,15 @@
+# Notification
+### Custom web component
+
 ![Image of all the available notification types](images/notifications.png)
 
 # What is this?
 This is a web component designed by me, Michael. I want to build my own library of web components that I can use for my various projects.
-I do not use a library for web components, just the standards that define those. Because of this those components do not work on all browser.
+I do not use a library for web components, just the standards that define those. Because of this those components do not work on all browsers.
 Actually, they only work in Chrome so far, and maybe Opera.
 
 # Where can I use it?
-As stated before, this component, and others from my components, do only work in Chrome and Opera. Other browsers do not support `HTML-Import` which is the way to import the component.
+As stated before, this component, and others from my components, only work in Chrome and Opera. Other browsers do not support `HTML-Import` which is the way to import the component at the moment.
 I might add support for other browsers once I find a solution that I think is sustainable. Currently even the guys developing the browsers are not sure what's the right way to-go.
 
 # How do I use it?
@@ -35,7 +38,7 @@ Of course, the use-cases I described here are not set in stone, use them to your
 Now that you have set the correct type you can set the title of the notification and the message it displays. This can also be done easily through attributes, like so.
 
 ```html
-    <mibu-notification type="success" title="YOUR TITLE HERE" message="Your message here ..."></mibu-notification>
+    <mibu-notification type="success" title="Your title here ..." message="Your message here ..."></mibu-notification>
 ```
 
 One last thing, I`d love to know what my components are used for, so if you use them consider sending me a message with your creation in it.
